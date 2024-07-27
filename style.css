@@ -3,7 +3,7 @@ body {
     background-color: bisque;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
     height: 100vh; /* Ajustado para ocupar toda la altura de la ventana */
     margin: 0;
 }
@@ -11,7 +11,7 @@ body {
 .container {
     background-color: #fff; /* Fondo blanco para resaltar contenido */
     border-radius: 20px; /* Borde más suave */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
+    box-shadow: 0 4px 15px rgba(149, 122, 122, 0.1); /* Sombra más sutil */
     padding: 40px; /* Espacio interno */
     max-width: 400px; /* Limitar el ancho máximo */
     width: 100%;

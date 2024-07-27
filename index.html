@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptacion de palabras y frases</title>
 
-    <link rel="stylesheet" href="style.css"> <!--llamo al css-->
+    <link rel="stylesheet" href="style.css"> <!--calls css-->
 
 </head>
 <body> 
@@ -15,13 +15,17 @@
             <input type="text" id="inputText" placeholder="Ingresa tu texto aquí">
             <button onclick="encriptar()">Encriptar</button>
             <button onclick="desencriptar()">Desencriptar</button>
+           
         </div>
+
         <div class="input-group">
+         
             <input type="text" id="outputText" placeholder="Resultado" readonly>
+            <button onclick="copiarTexto()">copiar Texto</button>
         </div>
     </div>
-    <!-- llamo al script de javascript-->
-    <script src="main.js"></script>
+    
+    <script src="main.js"></script><!-- calls javascript-->
 
 </body>
 

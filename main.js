@@ -15,3 +15,21 @@ function desencriptar(){
         alert("texto invalido para encriptacion");
     }
 }
+
+function copiarTexto(){
+    const encriptedText = document.getElementById('outputText').value;
+    if(encriptedText.trim() === ''){
+        alert('No hay texto para copiar');
+        return;
+    }
+    const textArea = document.createElement('textarea');
+    textArea.value = encriptedText;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textArea);
+    document.getElementById('outputText').value='';
+    alert('texto encriptado copiado en el portapapeles');
+    
+    
+}
