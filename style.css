@@ -1,33 +1,111 @@
-body{
-    background-color: aquamarine;
-    padding: 20px;
+body {
     display: flex;
-    align-items: center;
+    background-color: #f3f5fc;
+    padding: 20px;
     height: 100%;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inter', sans-serif;
+}
 
+main {
+    display: flex;
+    gap: 20px;
 }
-.titulos{
-    font-size: 24px;
-    width: 100%;
-    
+
+.text-area {
+    width: 500px;
+    height: 500px;
+    background-color: #f3f5fc;
 }
-textarea{
-    width: 100%;
-    height: 100px;
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    resize: none;
+::placeholder{
+    color:#0A3871;
 }
-button{
-    background: #007bff;
-    color: #fff;
+input,textarea{
     border: none;
-    padding:10px 20px;
-    margin: 5px;
-    border-radius:4px;
+    outline: none;
+}
+.text-area-resultado {
+    width: 680px;
+    height: 300px;
+    padding: 20px;
+   
+    background-size: 150px 150px;
+    border: 2px solid #0A3871;
+    border-radius: 8px;
+    color: #0A3871;
+    position: relative;
+}
+
+.text-area-resultado.no-imagen {
+    background-image: none;
+}
+
+.text-area-resultado:focus {
+    outline: none;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultado .boton-copiar {
+    margin-top: 20px;
+    border: 1px solid #0A3871;
+    border-radius: 8px;
+    color: #0A3871;
     cursor: pointer;
+    height: 50px;
+    width: 100%;
+    max-width: 200px;
+}
+
+.resultado .boton-copiar.oculto {
+    display: none;
+}
+
+.informacion, .botones {
+    margin-top: 20px;
+}
+
+.informacion img {
+    vertical-align: middle;
+}
+
+.informacion span {
+    margin-left: 10px;
+}
+
+.boton-encriptar, .boton-desencriptar {
+    border-radius: 8px;
+    cursor: pointer;
+    height: 50px;
+    width: 100%;
+    max-width: 200px;
+}
+
+.boton-encriptar {
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    color: white;
+}
+
+.boton-desencriptar {
+    background: white;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+
+.titulo-no-encontrado {
+    font-size: 18px;
+    color: #0A3871;
+    margin-top: 20px;
+}
+
+.texto-no-encontrado {
+    font-size: 16px;
+    color: #0A3871;
+    margin-top: 10px;
 }
